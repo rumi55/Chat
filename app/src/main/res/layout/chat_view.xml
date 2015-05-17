@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/chatImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LoginError"
+        android:id="@+id/chatLoginView"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/chatImageView"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/background_material_dark" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MessageError"
+        android:id="@+id/chatMessageView"
+        android:layout_alignBottom="@+id/chatImageView"
+        android:layout_toEndOf="@+id/chatImageView"
+        android:layout_below="@+id/chatLoginView"
+        android:textSize="@dimen/message_text_size"
+        android:textIsSelectable="true"
+        android:textStyle="italic" />
+</RelativeLayout>
